@@ -1,9 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+#------------fednews------------
+#Version: 0.1
+#License: MIT
 
 import sys
 import os
 import feedparser
-from subprocess import call
+#from subprocess import call
 from bs4 import BeautifulSoup
 
 def printLine():
@@ -18,9 +21,9 @@ def feedContents(feed):
     		printLine()
    	 	soup = BeautifulSoup(post.description, "lxml")
     		texts = soup.findAll(text = True)
-    		print ''.join(texts)
-		print ''
-		print post.link
+    		print (''.join(texts))
+    		print ("\n")
+    		print (post.link)
 	printLine()
 
 
