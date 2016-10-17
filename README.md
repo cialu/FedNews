@@ -9,3 +9,13 @@ dnf copr enable cialu/fednews
 
 dnf install fednews
 ```
+
+### Dependencies
+
+```
+python
+
+feedparser
+
+beautifulsoup
+```
