@@ -15,6 +15,8 @@ dnf install fednews
 ```
 python
 
+lxml
+
 feedparser
 
 beautifulsoup
